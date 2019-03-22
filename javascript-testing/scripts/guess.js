@@ -33,10 +33,10 @@ function SubmitGuess() {
         document.getElementById("submitSection").style.display = "none";
         document.getElementById("startNew").style.display = "";
     } else if (newNumber > randomNumber) {
-        message1.textContent = "value too big!"
+        message1.textContent = "value is big!"
         message1.style.backgroundColor = "red";
     } else if (newNumber < randomNumber) {
-        message1.textContent = "value too small!"
+        message1.textContent = "value is small!"
         message1.style.backgroundColor = "blue";
     }
 
