@@ -4,7 +4,7 @@ var prevGuess = document.getElementById("prevGuess");
 var message1 = document.getElementById("message1");
 var guessedNumber = document.getElementById("txtGuessedNumber");
 
-// window load event
+// window load event (Can also add the load even on body tag)
 window.onload = function () {
     //document.getElementById("submitSection").style.display = "";
     guessedNumber.focus();    
