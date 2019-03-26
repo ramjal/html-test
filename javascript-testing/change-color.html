@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Function library example</title>
+    <style>
+        button {
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button>Change Color</button>
+
+    <script>
+        var btn = document.querySelector('button');
+        
+        function randNum(value) {
+            return Math.floor(Math.random() * value);
+        }
+
+        btn.onclick = function () {
+            var rgb = 'rgb(' + randNum(256) + ',' + randNum(256) + ',' + randNum(256) + ')';
+            document.body.style.backgroundColor = rgb;
+            rgb = 'rgb(' + randNum(256) + ',' + randNum(256) + ',' + randNum(256) + ')';
+            btn.style.backgroundColor = rgb;
+            rgb = 'rgb(' + randNum(256) + ',' + randNum(256) + ',' + randNum(256) + ')';
+            btn.style.color = rgb;
+        }
+
+    </script>
+</body>
+
+</html>
